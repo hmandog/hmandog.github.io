@@ -3,41 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Blog - My Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="images/image.png" alt="Site Logo" class="logo">
-        <h1>My Blog</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="about.html">About/Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section>
-            <h2>Recent Blog Posts</h2>
-            <article>
-                <h3><a href="post1.html">Post Title 1</a></h3>
-                <p>A short description of the blog post goes here...</p>
-            </article>
-            <article>
-                <h3><a href="post2.html">Post Title 2</a></h3>
-                <p>A short description of the blog post goes here...</p>
-            </article>
-            <!-- Add more blog posts -->
-        </section>
-    </main>
+<header>
+    <img src="logo.png" alt="Logo" class="logo">
+    <nav>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <footer>
-        <p>&copy; 2024 Hayden Hickerson</p>
-    </footer>
+<main>
+    <h1>Blog</h1>
+    <section class="blog-card">
+        <h2>Blog Post Title 1</h2>
+        <p>Summary of blog post 1.</p>
+        <a href="blogpost1.html">Read More</a>
+    </section>
+    <section class="blog-card">
+        <h2>Blog Post Title 2</h2>
+        <p>Summary of blog post 2.</p>
+        <a href="blogpost2.html">Read More</a>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 My Website. All rights reserved.</p>
+</footer>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
+</script>
+
 </body>
 </html>

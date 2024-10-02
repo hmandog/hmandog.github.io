@@ -3,43 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phone Controlled Robot</title>
+    <title>Project 1 - My Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="images/image.png" alt="Site Logo" class="logo">
-        <h1>Phone Controlled Robot</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="resources.html">Resources</a></li>
-                <li><a href="about.html">About/Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section>
-            <h2>Project Overview</h2>
-            <p>Description of the Robot goes here...</p>
-        </section>
+<header>
+    <img src="logo.png" alt="Logo" class="logo">
+    <nav>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
 
-        <section>
-            <h2>Schematics</h2>
-            <img src="schematic.png" alt="Schematic Diagram">
-        </section>
+<main>
+    <h1>Project 1: Handheld Computer</h1>
+    <p>This project involves creating a handheld computer with various functionalities.</p>
+    <h2>Features</h2>
+    <ul>
+        <li>Scientific calculator</li>
+        <li>Custom formula library</li>
+        <li>Data logging capabilities</li>
+    </ul>
+    <h2>Schematic</h2>
+    <img src="project1_schematic.png" alt="Schematic for Project 1" class="project-image">
+    <h2>Files</h2>
+    <ul>
+        <li><a href="schematic_project1.kicad_sch">Download Schematic</a></li>
+        <li><a href="code_project1.ino">Download Arduino Code</a></li>
+    </ul>
+</main>
 
-        <section>
-            <h2>3D Models</h2>
-            <p><a href="model.stl" download>Download 3D Model (.stl)</a></p>
-        </section>
-    </main>
+<footer>
+    <p>&copy; 2024 My Website. All rights reserved.</p>
+</footer>
 
-    <footer>
-        <p>&copy; 2024 Hayden Hickerson</p>
-    </footer>
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
+</script>
+
 </body>
 </html>

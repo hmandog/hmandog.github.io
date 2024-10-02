@@ -1,182 +1,148 @@
-/* General Styling */
-body {
-    font-family: 'Roboto', sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
 }
 
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Use a clean, modern font */
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light background */
+    color: #333; /* Dark text color */
+}
+
+/* Header Styles */
 header {
-    background-color: #4a4a4a; /* Dark color from logo */
-    color: white;
-    padding: 20px;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-nav {
-    flex-grow: 1;
-    text-align: right;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: 15px;
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-main {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-}
-
-/* Heading Styles */
-h1, h2, h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-}
-
-h1 {
-    font-size: 2.5em;
-}
-
-h2 {
-    font-size: 2em;
-    color: #333;
-}
-
-h3 {
-    font-size: 1.5em;
-    color: #4a4a4a;
-}
-
-/* Project Gallery */
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.project {
-    border: 2px solid #ccc;
-    border-radius: 10px; /* Rounded corners */
-    padding: 15px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
-}
-
-.project img {
-    max-width: 100%;
-    border-radius: 8px; /* Rounded image corners */
-}
-
-.project:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Buttons */
-button, .btn {
-    border: 2px solid #4a4a4a; /* Outline style */
-    background: none;
     padding: 10px 20px;
-    border-radius: 25px; /* Rounded buttons */
-    font-size: 1em;
-    transition: background-color 0.3s, color 0.3s;
+    background-color: #fff; /* White background for header */
+    border-bottom: 2px solid #4a4a4a; /* Bottom border */
 }
 
-button:hover, .btn:hover {
-    background-color: #4a4a4a; /* Dark background on hover */
-    color: white;
-}
-
-/* Blog Cards */
-.blog-post {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 30px;
-}
-
-.card {
-    width: 300px;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    overflow: hidden;
-    transition: box-shadow 0.3s ease;
-}
-
-.card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.card h3 {
-    padding: 15px;
-}
-
-.card p {
-    padding: 0 15px 15px 15px;
-    color: #666;
-}
-
-/* Footer */
-footer {
-    background-color: #4a4a4a; /* Dark footer */
-    color: white;
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-footer a {
-    color: white;
-    margin: 0 10px;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Logo Styling */
+/* Logo Styles */
 .logo {
-    max-width: 150px; /* Adjust size as needed */
-    height: auto;
-    display: block;
-    margin: 0 auto; /* Center the logo */
+    max-width: 120px; /* Adjust logo size */
+}
+
+/* Navigation Styles */
+nav {
+    position: relative; /* Positioning context for absolute positioning */
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row; /* Horizontal by default */
+}
+
+.nav-links li {
+    list-style-type: none; /* Remove bullets */
+    margin: 0 15px; /* Spacing between links */
+}
+
+.nav-links a {
+    text-decoration: none; /* Remove underline from links */
+    color: #4a4a4a; /* Link color */
+    font-weight: bold; /* Bold links */
+    padding: 10px; /* Padding for clickable area */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+/* Button Styles */
+button, a {
+    padding: 10px 20px; /* Larger tap area */
+    border: 2px solid #4a4a4a; /* Outlined button */
+    border-radius: 5px; /* Rounded corners */
+    display: inline-block; /* Allow padding to take effect */
+}
+
+button:hover, a:hover {
+    background-color: #e0e0e0; /* Change background on hover */
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display: none; /* Hidden by default */
+    font-size: 30px; /* Adjust size as needed */
+    cursor: pointer; /* Pointer cursor for the hamburger icon */
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+    .nav-links {
+        display: none; /* Hide navigation links by default on mobile */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute; /* Position relative to nav */
+        top: 50px; /* Adjust based on header height */
+        right: 0;
+        background-color: #4a4a4a; /* Background color */
+        width: 100%; /* Full width */
+    }
+
+    .nav-links.show {
+        display: flex; /* Show links when class 'show' is added */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon on mobile */
+    }
+
+    nav ul li {
+        padding: 10px; /* Padding for each link */
+        text-align: center; /* Center align text */
+    }
+
+    body {
+        font-size: 14px; /* Slightly smaller font size on mobile */
+    }
+}
+
+/* Image Styles */
+img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Project Gallery Styles */
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Space between grid items */
+    padding: 20px; /* Padding around the gallery */
+}
+
+.project-item {
+    background-color: #fff; /* Background for project items */
+    border: 1px solid #ccc; /* Border around items */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding inside items */
+    transition: transform 0.3s; /* Smooth scaling on hover */
+}
+
+.project-item:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center; /* Center align footer text */
+    padding: 20px; /* Padding for footer */
+    background-color: #4a4a4a; /* Footer background color */
+    color: #fff; /* White text color for footer */
+}
+
+/* Blog Styles */
+.blog-card {
+    background-color: #fff; /* White background for blog cards */
+    border: 1px solid #ccc; /* Border for blog cards */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding inside blog cards */
+    transition: transform 0.3s; /* Smooth scaling on hover */
+}
+
+.blog-card:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
 }

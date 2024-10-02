@@ -3,49 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About & Contact</title>
+    <title>About - My Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="images/image.png" alt="Site Logo" class="logo">
-        <h1>About Me</h1>
-        <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="blog.html">Blog</a></li>
-              <li><a href="resources.html">Resources</a></li>
-              <li><a href="about.html">About/Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section>
-            <h2>About Me</h2>
-            <p>Hi, I'm Hayden Hickerson. I enjoy building projects with Arduino and other electronics. My latest project was a Phone Controlled Robot.</p>
-        </section>
+<header>
+    <img src="logo.png" alt="Logo" class="logo">
+    <nav>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
 
-        <section>
-            <h2>Contact Me</h2>
-            <form action="https://formspree.io/YOUR_EMAIL" method="POST">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br>
+<main>
+    <h1>About Me</h1>
+    <p>This is where you can write about yourself.</p>
+</main>
 
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br>
+<footer>
+    <p>&copy; 2024 My Website. All rights reserved.</p>
+</footer>
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message"></textarea><br>
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
 
-                <input type="submit" value="Send">
-            </form>
-        </section>
-    </main>
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
+</script>
 
-    <footer>
-        <p>&copy; 2024 Hayden Hickerson</p>
-    </footer>
 </body>
 </html>
