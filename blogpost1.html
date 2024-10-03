@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post 1 - My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="images/images.png" alt="Logo" class="logo">
+    <nav>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Welcome to My Website!</h1>
+    <p>Published on: October 2, 2024</p>
+
+    <p>Hi, I'm Hayden Hickerson, and I’m excited to welcome you to my personal website. This site is a platform where I’ll showcase my projects, share my journey into the world of electronics and robotics, and offer useful resources to fellow creators and tech enthusiasts.</p>
+
+    <h2>Why I Created This Website</h2>
+    <p>The purpose of this website is simple: to create a central hub for my projects. Over the years, I’ve worked on various electronics and robotic builds, and I wanted a place where I could document them in detail, share schematics and files, and provide insights that might help others working on similar projects. This website also serves as a growing portfolio of my work.</p>
+
+    <h2>What You'll Find Here</h2>
+    <p>In addition to detailed breakdowns of my projects, you’ll find blog posts where I discuss my experiences, lessons learned, and tips for overcoming common challenges in electronics and robotics. There’s also a resources page where I’ll link to useful guides, datasheets, and websites that have helped me along the way.</p>
+
+    <h2>A Bit About Me</h2>
+    <p>I’ve always been fascinated by how things work, and my passion for electronics and robotics has grown over time. Whether it's building a robot from scratch or programming a handheld computer, I love combining problem-solving with creativity. I hope this website can inspire others to dive into their own projects and bring ideas to life!</p>
+
+    <p>Thanks for stopping by, and I hope you find my work and insights helpful. Stay tuned for more updates!</p>
+</main>
+
+<footer>
+    <p>&copy; 2024 My Website. All rights reserved.</p>
+</footer>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
+</script>
+
+</body>
+</html>
