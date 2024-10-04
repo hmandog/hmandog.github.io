@@ -78,8 +78,10 @@ button:hover, a:hover {
         position: absolute; /* Position relative to nav */
         top: 50px; /* Adjust based on header height */
         right: 0;
-        background-color: #4a4a4a; /* Background color */
+        background-color: #4a4a4a; /* Solid background color */
         width: 100%; /* Full width */
+        opacity: 1; /* Ensure the menu is fully opaque */
+        z-index: 1000; /* Bring the menu above other content */
     }
 
     .nav-links.show {
