@@ -68,6 +68,9 @@ button:hover, a:hover {
     display: none; /* Hidden by default */
     font-size: 30px; /* Adjust size as needed */
     cursor: pointer; /* Pointer cursor for the hamburger icon */
+    position: absolute; /* Absolute positioning */
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Move this value further left */
 }
 
 /* Mobile Styles */
@@ -77,9 +80,9 @@ button:hover, a:hover {
         flex-direction: column; /* Stack links vertically */
         position: absolute; /* Position relative to nav */
         top: 50px; /* Adjust based on header height */
-        left: 0;
+        left: 10px; /* Align with the button */
         background-color: #fff; /* Solid background color */
-        width: 100%; /* Full width */
+        width: calc(100% - 20px); /* Full width minus padding */
         z-index: 1000; /* Bring the menu above other content */
     }
 
