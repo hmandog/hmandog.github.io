@@ -106,6 +106,13 @@ img {
     height: auto; /* Maintain aspect ratio */
 }
 
+/* Main Content Styles */
+main {
+    padding: 20px; /* Padding around main content */
+    max-width: 800px; /* Limit width of main content */
+    margin: 0 auto; /* Center the main content */
+}
+
 /* Project Gallery Styles */
 .project-gallery {
     display: grid;
