@@ -27,45 +27,44 @@
     <p>The handheld computer project is designed to be a powerful, multifunctional calculator with a touchscreen interface. It supports basic calculations, scientific functions, engineering formulas, and more. The project uses the STM32 Nucleo-F411RE development board, a 3.5-inch TFT LCD display, and several other essential components.</p>
 
     <h2>Features</h2>
-    <ul>
-        <li>Basic Mode: Simple arithmetic operations.</li>
-        <li>Scientific Mode: Functions like sin, cos, log, exponents (up to ±12).</li>
-        <li>Engineering Mode: A menu with predetermined formulas where users provide inputs after selecting the formula.</li>
-        <li>Custom Formula Library: Storage for user-defined formulas.</li>
-        <li>Unit Converter: Conversions between units (length, weight, temperature, etc.).</li>
-        <li>Data Logging: Logs calculations and results to an SD card for future reference.</li>
-        <li>Battery Life Indicator: A display feature showing remaining battery life.</li>
-        <li>Touchscreen Interface: Intuitive interaction using a resistive touchscreen display.</li>
-    </ul>
+<ul>
+    <li><strong>Basic Mode:</strong> Simple arithmetic operations.</li>
+    <li><strong>Scientific Mode:</strong> Functions like sin, cos, log, exponents (up to ±12).</li>
+    <li><strong>Engineering Mode:</strong> A menu with predetermined formulas where users provide inputs after selecting the formula.</li>
+    <li><strong>Custom Formula Library:</strong> Storage for user-defined formulas.</li>
+    <li><strong>Unit Converter:</strong> Conversions between units (length, weight, temperature, etc.).</li>
+    <li><strong>Data Logging:</strong> Logs calculations and results to an SD card for future reference.</li>
+    <li><strong>Battery Life Indicator:</strong> A display feature showing remaining battery life.</li>
+    <li><strong>Touchscreen Interface:</strong> Intuitive interaction using a resistive touchscreen display.</li>
+</ul>
 
-    <h2>Parts List</h2>
-    <ul>
-        <li><strong>STM32 Nucleo-F411RE Development Board</strong> - Main microcontroller for handling all the operations.</li>
-        <li><strong>3.5-inch TFT LCD Display (ILI9486)</strong> - Touchscreen display for user interaction and output.</li>
-        <li><strong>Li-Po Battery (3.7V, 2000mAh)</strong> - Powers the handheld computer.</li>
-        <li><strong>MT3608 Step-up Boost Converter</strong> - Increases voltage to 5V for the components.</li>
-        <li><strong>TP4056 Lithium Battery Charger Module</strong> - Handles charging the Li-Po battery.</li>
-        <li><strong>JST XH 2-Pin Connectors</strong> - Connects the battery and other components.</li>
-        <li><strong>Micro-USB Cable</strong> - For programming and charging.</li>
-        <li><strong>SD Card (8GB)</strong> - Stores logged data and user-defined formulas.</li>
-        <li><strong>Pin Headers (40P, 2.54mm)</strong> - Used for connecting components to the STM32 board.</li>
-        <li><strong>LED Indicators</strong> - Shows charging status and power on/off state.</li>
-        <li><strong>Heat Sinks (9x9x5mm)</strong> - Added to prevent overheating of critical components.</li>
-        <li><strong>Resistors and Capacitors</strong> - For stabilizing signals and filtering power supply.</li>
-    </ul>
+<h2>Parts List</h2>
+<ul>
+    <li><strong>STM32 Nucleo-F411RE Development Board:</strong> Main microcontroller for handling all the operations.</li>
+    <li><strong>3.5-inch TFT LCD Display (ILI9486):</strong> Touchscreen display for user interaction and output.</li>
+    <li><strong>Li-Po Battery (3.7V, 2000mAh):</strong> Powers the handheld computer.</li>
+    <li><strong>MT3608 Step-up Boost Converter:</strong> Increases voltage to 5V for the components.</li>
+    <li><strong>TP4056 Lithium Battery Charger Module:</strong> Handles charging the Li-Po battery.</li>
+    <li><strong>JST XH 2-Pin Connectors:</strong> Connects the battery and other components.</li>
+    <li><strong>Micro-USB Cable:</strong> For programming and charging.</li>
+    <li><strong>SD Card (8GB):</strong> Stores logged data and user-defined formulas.</li>
+    <li><strong>Pin Headers (40P, 2.54mm):</strong> Used for connecting components to the STM32 board.</li>
+    <li><strong>LED Indicators:</strong> Shows charging status and power on/off state.</li>
+    <li><strong>Heat Sinks (9x9x5mm):</strong> Added to prevent overheating of critical components.</li>
+    <li><strong>Resistors and Capacitors:</strong> For stabilizing signals and filtering power supply.</li>
+</ul>
+
 
     <h2>Schematic</h2>
-    <img src="project2_schematic.png" alt="Schematic for Handheld Computer" class="project-image">
+    <img src="project2_schematic.png" alt="Schematic Diagram">
+    <a href="schematic_project2.kicad_sch" download>Download Schematic</a>
 
-    <h2>Files</h2>
-    <ul>
-        <li><a href="schematic_project2.kicad_sch">Download Schematic</a></li>
-        <li><a href="code_project2.ino">Download STM32 Code</a></li>
-    </ul>
+    <h2>Code</h2>
+    <a href="code_project2.ino" download>Download Code</a>
 </main>
 
 <footer>
-    <p>&copy; 2024 My Website. All rights reserved.</p>
+    <p>&copy; 2024 Hayden Hickerson. All rights reserved.</p>
 </footer>
 
 <script>
@@ -73,7 +72,7 @@
     const navLinks = document.querySelector('.nav-links');
 
     hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('show');
+        navLinks.classList.toggle('show'); // Toggle the 'show' class to display/hide links
     });
 </script>
 
