@@ -108,9 +108,12 @@ img {
 
 /* Main Content Styles */
 main {
-    padding: 20px; /* Padding around main content */
-    max-width: 800px; /* Limit width of main content */
+    padding: 20px; /* Add padding around the content */
+    max-width: 800px; /* Optional: Set a max-width for the main content */
     margin: 0 auto; /* Center the main content */
+    background-color: #fff; /* Optional: Background for better readability */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Light shadow for depth */
 }
 
 /* Project Gallery Styles */
