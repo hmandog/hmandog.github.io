@@ -80,15 +80,17 @@ button:hover, a:hover {
         flex-direction: column; /* Stack links vertically */
         position: absolute; /* Position relative to nav */
         top: 50px; /* Adjust based on header height */
-        right: 0; /* Align with the right side */
+        left: 0; /* Align with the left side of the screen */
         background-color: #fff; /* Solid background color */
         width: 100%; /* Full width */
         z-index: 1000; /* Bring the menu above other content */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: shadow for depth */
     }
 
     .nav-links.show {
         display: flex; /* Show links when class 'show' is added */
     }
+}
 
     .hamburger {
         display: block; /* Show hamburger icon on mobile */
