@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="images/image.png" alt="Logo" class="logo">
+    <nav>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Useful Resources</h1>
+    <p>Here are some of the websites and resources that I’ve found helpful in my projects. Feel free to explore them and utilize the guides, datasheets, and documentation for your own work.</p>
+
+    <h2>Links to Useful Resources</h2>
+    <ul class="resource-links">
+        <li><a href="https://www.arduino.cc/en/Reference/HomePage" target="_blank">Arduino Documentation</a> - Official Arduino reference for all functions, libraries, and modules.</li>
+        <li><a href="https://www.adafruit.com/" target="_blank">Adafruit</a> - A great place for electronics kits, tutorials, and more.</li>
+        <li><a href="https://www.sparkfun.com/" target="_blank">SparkFun</a> - Another excellent resource for electronic components and learning.</li>
+        <li><a href="https://www.kicad.org/" target="_blank">KiCad</a> - Open-source software for schematic capture and PCB design.</li>
+        <li><a href="https://www.digikey.com/" target="_blank">Digi-Key</a> - A comprehensive electronics component distributor.</li>
+        <li><a href="https://www.mouser.com/" target="_blank">Mouser Electronics</a> - Another trusted source for electronic parts.</li>
+    </ul>
+
+    <h2>Additional Links</h2>
+    <ul class="resource-links">
+        <li><a href="https://create.arduino.cc/" target="_blank">Arduino Create</a> - A great platform to develop, collaborate, and share Arduino projects online.</li>
+        <li><a href="https://www.github.com/" target="_blank">GitHub</a> - Version control and hosting platform for software development projects.</li>
+        <li><a href="https://www.tinkercad.com/" target="_blank">Tinkercad</a> - A web-based 3D modeling and circuit simulation tool.</li>
+        <li><a href="https://www.instructables.com/" target="_blank">Instructables</a> - A community platform for DIY projects, tutorials, and ideas.</li>
+        <li><a href="https://www.thingiverse.com/" target="_blank">Thingiverse</a> - A collection of user-generated 3D models ready for printing.</li>
+    </ul>
+</main>
+
+<footer>
+    <p>&copy; 2024 My Website. All rights reserved.</p>
+</footer>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
+</script>
+
+</body>
+</html>

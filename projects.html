@@ -3,46 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Your Projects Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <title>Projects - My Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-      <div class="logo">
-        <img src="images/image.png" alt="Your Logo" class="logo-image">
-      </div>
-        <nav class="navbar">
-            <div class="hamburger" id="hamburger">&#9776;</div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project">
-                <a href="iot-robot.html">
-                    <img src="path/to/iot-robot.jpg" alt="IoT Robot">
-                    <h3>IoT Robot</h3>
-                </a>
-            </div>
-            <div class="project">
-                <a href="handheld-computer.html">
-                    <img src="path/to/handheld-computer.jpg" alt="Handheld Computer">
-                    <h3>Handheld Computer</h3>
-                </a>
-            </div>
+<header>
+    <img src="images/image.png" alt="Logo" class="logo">
+    <nav>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Welcome to My Website!</h1>
+    <section class="project-gallery">
+        <div class="project-item">
+            <h2>Phone Controlled Robot</h2>
+            <p>During this project I used an Arduino Uno R4 Wifi and some other off
+               the shelf components to design and create a simple tracked robot. I also dove into the
+               Arduino IOT dashboard as a means of controlling the robot.</p>
+            <a href="project1.html">View More</a>
+        </div>
+        <div class="project-item">
+            <h2>Handheld Computer</h2>
+            <p>My current project. Check back later for more details.</p>
+            <a href="project2.html">View More</a>
+        </div>
+        <div class="project-item">
+            <h2>TBD</h2>
+            <p>Coming soon.</p>
+            <a href="project3.html">View More</a>
         </div>
     </section>
+</main>
 
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-    </footer>
+<footer>
+    <p>&copy; 2024 My Website. All rights reserved.</p>
+</footer>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
+</script>
+
 </body>
 </html>

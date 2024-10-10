@@ -3,33 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Your Projects Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <title>About Me - My Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-      <div class="logo">
-        <img src="images/image.png" alt="Your Logo" class="logo-image">
-      </div>
-        <nav class="navbar">
-            <div class="hamburger" id="hamburger">&#9776;</div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I am an engineer passionate about creating innovative solutions. My projects focus on integrating technology with everyday tasks.</p>
+<header>
+    <img src="images/image.png" alt="Logo" class="logo">
+    <nav>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="about-section">
+        <h1>About Me</h1>
+        <div class="about-content">
+            <img src="profile.jpg" alt="Hayden Hickerson" class="profile-pic">
+            <div class="about-text">
+                <p>Hi, I’m Hayden Hickerson, and welcome to my website! I’m a tech enthusiast and maker who loves working on electronics and robotics projects. This site is where I document my journey, share my projects, and hopefully inspire others who share my passion.</p>
+                <p>Ever since I built my first project, I’ve been hooked on learning how things work. From basic electronics to complex robotics, each new challenge presents an opportunity to learn something new and push the limits of what I can create.</p>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-    </footer>
+    <section class="mission-section">
+        <h2>My Mission</h2>
+        <p>My mission is to continuously explore new technologies, create innovative projects, and share the knowledge I’ve gained with others. Whether it’s building a robot or designing a handheld computer, I aim to inspire others to pursue their own creative endeavors.</p>
+    </section>
+
+    <section class="contact-section">
+        <h2>Get in Touch</h2>
+        <p>If you have any questions, suggestions, or just want to say hello, feel free to contact me through the form below. I look forward to connecting with you!</p>
+
+        <form class="contact-form" action="submit_form.php" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 My Website. All rights reserved.</p>
+</footer>
+
+<script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+    });
+</script>
+
 </body>
 </html>
