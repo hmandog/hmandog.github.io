@@ -45,11 +45,13 @@
 </footer>
 
 <script>
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.querySelector('.nav-links');
+    document.addEventListener("DOMContentLoaded", function() {
+        const hamburger = document.querySelector('.hamburger'); // Select the hamburger menu
+        const navLinks = document.querySelector('.nav-links'); // Select the navigation links
 
-    hamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('show');
+        hamburger.addEventListener('click', function() {
+            navLinks.classList.toggle('show'); // Toggle the 'show' class on click
+        });
     });
 </script>
 
