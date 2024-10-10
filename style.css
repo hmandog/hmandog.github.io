@@ -65,12 +65,9 @@ button:hover, a:hover {
 
 /* Hamburger Menu Styles */
 .hamburger {
-    display: none; /* Hidden by default */
     font-size: 30px; /* Adjust size as needed */
     cursor: pointer; /* Pointer cursor for the hamburger icon */
-    position: absolute; /* Absolute positioning */
-    top: 10px; /* Adjust as needed */
-    right: 20px; /* Move this value further right */
+    display: none; /* Hide by default, show on mobile */
 }
 
 /* Mobile Styles */
@@ -79,7 +76,7 @@ button:hover, a:hover {
         display: none; /* Hide navigation links by default on mobile */
         flex-direction: column; /* Stack links vertically */
         position: absolute; /* Position relative to nav */
-        top: 50px; /* Adjust based on header height */
+        top: 60px; /* Adjust this value to match header height */
         left: 0; /* Align with the left side of the screen */
         background-color: #fff; /* Solid background color */
         width: 100%; /* Full width */
@@ -90,17 +87,15 @@ button:hover, a:hover {
     .nav-links.show {
         display: flex; /* Show links when class 'show' is added */
     }
-}
+
+    .nav-links li {
+        padding: 10px; /* Padding for each link */
+        text-align: center; /* Center align text */
+        border-bottom: 1px solid #ddd; /* Optional: separator between links */
+    }
 
     .hamburger {
         display: block; /* Show hamburger icon on mobile */
-    }
-}
-
-
-    nav ul li {
-        padding: 10px; /* Padding for each link */
-        text-align: center; /* Center align text */
     }
 
     body {
