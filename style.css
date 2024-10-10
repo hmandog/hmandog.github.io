@@ -70,8 +70,9 @@ button:hover, a:hover {
     cursor: pointer; /* Pointer cursor for the hamburger icon */
     position: absolute; /* Absolute positioning */
     top: 10px; /* Adjust as needed */
-    left: 10px; /* Move this value further left */
+    left: 50px; /* Move this value further left, adjust as needed */
 }
+
 
 /* Mobile Styles */
 @media (max-width: 600px) {
