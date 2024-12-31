@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - My Website</title>
+    <title>Welcome - My Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,24 +24,16 @@
 
 <main>
     <h1>Welcome to My Website!</h1>
-    <section class="project-gallery">
-        <div class="project-item">
-            <h2>Phone Controlled Robot</h2>
-            <p>During this project I used an Arduino Uno R4 Wifi and some other off
-               the shelf components to design and create a simple tracked robot. I also dove into the
-               Arduino IOT dashboard as a means of controlling the robot.</p>
-            <a href="project1.html">View More</a>
-        </div>
-        <div class="project-item">
-            <h2>Handheld Pokemon Emulator</h2>
-            <p>A GBA like handheld to play Pokemon ROMs on the go.</p>
-            <a href="project2.html">View More</a>
-        </div>
-        <div class="project-item">
-            <h2>Warriors of Antiquity</h2>
-            <p>Warriors of Antiquity is a strategic card game where players lead ancient civilizations like Rome, Egypt, and Dynastic China into epic battles for dominance. Build armies, manage resources, and capture cities to outwit your opponents and claim victory in this clash of empires!</p>
-            <a href="project3.html">View More</a>
-        </div>
+    <p>This website is a hub for all my creative endeavors, technical projects, and personal insights. Here, you'll find a collection of my work, a blog sharing my thoughts and experiences, and resources that have helped me along the way.</p>
+    <p>Whether you're here to explore innovative projects, dive into intriguing topics, or simply learn more about me, there's something for everyone. Thank you for visiting, and I hope you enjoy your stay!</p>
+
+    <section>
+        <h2>Quick Links</h2>
+        <ul>
+            <li><a href="projects.html">Explore My Projects</a></li>
+            <li><a href="blog.html">Read My Blog</a></li>
+            <li><a href="about.html">Learn About Me</a></li>
+        </ul>
     </section>
 </main>
 
@@ -51,11 +43,11 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {
-        const hamburger = document.querySelector('.hamburger'); // Select the hamburger menu
-        const navLinks = document.querySelector('.nav-links'); // Select the navigation links
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
 
         hamburger.addEventListener('click', function() {
-            navLinks.classList.toggle('show'); // Toggle the 'show' class on click
+            navLinks.classList.toggle('show');
         });
     });
 </script>
