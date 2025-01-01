@@ -232,3 +232,20 @@ footer {
 .contact-form button:hover {
     background-color: #ffc700;
 }
+
+.quick-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; /* Adjust spacing as needed */
+}
+
+.quick-links li {
+    margin: 0 10px; /* Space between links */
+}
+
+.quick-links a {
+    text-decoration: none;
+    color: #000; /* Change color as needed */
+    font-weight: bold; /* Optional: make the links stand out */
+}
