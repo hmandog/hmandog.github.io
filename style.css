@@ -19,13 +19,22 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: #fff; /* White background for header */
-    border-bottom: 2px solid #4a4a4a; /* Bottom border */
+    background-color: #fff;
+    border-bottom: 2px solid #4a4a4a;
 }
 
 /* Logo Styles */
 .logo {
     max-width: 120px; /* Adjust logo size */
+    height: auto; /* Ensure the aspect ratio is preserved */
+}
+
+/* Header h2 Styles */
+header h2 {
+    margin: 0 15px; /* Ensure space between the logo and the h2 */
+    font-size: 1.8rem; /* Set a comfortable font size for the h2 */
+    white-space: nowrap; /* Prevent text wrapping */
+    flex-grow: 1; /* Allow the h2 to grow to take up available space */
 }
 
 /* Navigation Styles */
