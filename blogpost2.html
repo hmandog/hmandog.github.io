@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post 2 - My Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <img src="images/logo.png" alt="Logo" class="logo">
+    <h2>H3 Techworks</h2>
+    <nav>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h1>Exploring My Current Projects</h1>
+    <p>Published on: March 3, 2025</p>
+
+    <p>Hi, Hayden here again! In this post, I want to share some of the exciting projects I’m currently working on and exploring. These
+       projects range from educational tools to toys and sustainable technology. Here’s a brief overview of the three main projects I'm diving into right now:</p>
+
+    <h2>1. Educational Trainer Circuit Board</h2>
+    <p>One of my current projects is designing an Educational Trainer Circuit Board. The idea behind this project is to create a hands-on tool
+        for learning about circuits and electronics. It will feature various components that learners can interact with, allowing them to explore
+        how different parts of a circuit work together. This project is a great way for both beginners and intermediate learners to get practical
+        experience with circuit design and hands on learning.</p>
+
+    <h2>2. Jakks Pacific "Power Trains"-Inspired Toy</h2>
+    <p>Another project I’m excited about is creating a toy inspired by Jakks Pacific "Power Trains."
+      I’m working on designing my own motorized toy train set, combining elements of creativity and engineering.
+      This project is a lot of fun and allows me to incorporate my knowledge of electronics and mechanics to create
+      a toy that is both entertaining and educational. I’m planning to 3D model parts to replicate the size and functionality
+      of the classic Power Trains set.</p>
+
+    <h2>3. Smart Recycling Bin</h2>
+    <p>Lastly, I’m working on the Smart Recycling Bin. This project is focused on automating the sorting of recyclables using object recognition and AI.
+       By using a USB camera and a Google Coral USB Accelerator (and maybe a barcode scanner), I plan to create a system that can identify and sort recyclables in real-time. This project
+       has the potential to make recycling easier and more efficient, which is something I’m really passionate about. The Smart Recycling Bin will be equipped
+       with a conveyor system and deflection arms to physically sort materials like paper, plastic, and metal.</p>
+
+    <h2>Conclusion</h2>
+    <p>These projects are keeping me busy, and I’m excited to see where they go. Each one is unique, but they all share a common theme of combining technology with creativity and education.
+      I’ll be sure to share updates as I make progress, and I’m looking forward to hearing any feedback or ideas you may have.</p>
+
+    <p>Thanks for reading, and stay tuned for more updates!</p>
+</main>
+
+<footer>
+    <p>&copy; 2025 H3 Techworks. All rights reserved.</p>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const hamburger = document.querySelector('.hamburger'); // Select the hamburger menu
+        const navLinks = document.querySelector('.nav-links'); // Select the navigation links
+
+        hamburger.addEventListener('click', function() {
+            navLinks.classList.toggle('show'); // Toggle the 'show' class on click
+        });
+    });
+</script>
+
+</body>
+</html>
